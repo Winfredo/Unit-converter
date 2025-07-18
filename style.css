@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+:root {
+  --primary-color: #1f2937;
+  --secondary-color: #6943ff;
+}
+
+.header {
+  background-color: var(--secondary-color);
+  color: white;
+  width: 100%;
+  height: 40vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 40px;
+}
+
+.header h1 {
+  font-size: 1.7rem;
+}
+
+input {
+  width: 20%;
+  height: 40%;
+  font-size: 4rem;
+  padding-left: 10px;
+  background-color: var(--secondary-color);
+  border: 2px solid #9a7fd9;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 7px;
+}
+
+input:focus {
+  border: 2px solid #c9b5ff;
+}
+
+.header button {
+  padding: 10px 33px;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+
+.conversion {
+  width: 100%;
+  height: 60vh;
+  background-color: var(--primary-color);
+  padding-top: 30px;
+}
+
+.conversion-meter{
+    width: 80%;
+    height: 25%;
+    background-color: #273549;
+    text-align: center;
+    margin: 1.7rem auto;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.conversion-title{
+    font-size: 1.2rem;
+    color: #CCC1FF;
+    font-weight: bold;
+}
+
+.conversion-result,.conversion-result1, .conversion-result2 {
+    color: white;
+}
+
+@media (min-width: 768px) {
+ input {
+  width: 10%;
+  height: 60%;
+  font-size: 4rem;
+  padding-left: 10px;
+  background-color: var(--secondary-color);
+  border: 2px solid #9a7fd9;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 7px;
+}
+
+.header button {
+  padding: 1rem 4rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+
+  .conversion-meter {
+    width: 60%;
+    height: auto;
+    padding: 20px;
+  }
+}
