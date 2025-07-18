@@ -4,8 +4,15 @@ let conversionResult = document.querySelector(".conversion-result");
 let conversionResult1 = document.querySelector(".conversion-result1");
 let conversionResult2 = document.querySelector(".conversion-result2");
 
+inputValue.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    convertBtn.click();
+  }
+});
+
 convertBtn.addEventListener("click", () => {
-  let number = inputValue.value;
+  let number = parseFloat(inputValue.value);
+
   console.log(number);
 
   if (number === "") {
